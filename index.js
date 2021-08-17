@@ -18,5 +18,8 @@ app.get("/users", (req, res) => {
   });
 });
 
-if (isDev) app.listen(PORT);
+if (isDev)
+  app.listen(PORT, () => {
+    console.log("server running....");
+  });
 else app.listen();
