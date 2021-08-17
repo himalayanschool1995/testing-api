@@ -10,6 +10,14 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/users", (req, res) => {
+  res.status(200).json({
+    message: "success",
+    path:"users"
+  });
+});
+
+
 app.listen(PORT)
 
 
