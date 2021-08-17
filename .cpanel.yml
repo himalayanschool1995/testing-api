@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/hiisedun/node-app/testing-api-v1/
-    - /bin/cp -a * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
