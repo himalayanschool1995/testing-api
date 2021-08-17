@@ -6,13 +6,13 @@ const PORT = 5000;
 const isDev = process.env.NODE_APP !== "production";
 
 app.get("/", (req, res) => {
-  res.status(200).json({
+  return res.status(200).json({
     message: "success",
   });
 });
 
 app.get("/users", (req, res) => {
-  res.status(200).json({
+ return  res.status(200).json({
     message: "success",
     path: "users",
   });
